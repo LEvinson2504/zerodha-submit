@@ -2341,3 +2341,321 @@ requests.exceptions.ContentDecodingError: ('Received response with content-encod
 	</body>
 </html>
 
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>403 - Forbidden</title>
+	</head>
+	<body>
+		<h1>403 - Forbidden</h1>
+	</body>
+</html>
+
+Failed to complete cronjob at ('* * * * *', 'zerodha.cron.scrape_bse', '>> /home/levinson/Projects/zerodha/zerodha/logs.txt 2>&1')
+Traceback (most recent call last):
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/urllib3/response.py", line 401, in _decode
+    data = self._decoder.decompress(data)
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/urllib3/response.py", line 88, in decompress
+    ret += self._obj.decompress(data)
+zlib.error: Error -3 while decompressing data: incorrect header check
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/requests/models.py", line 753, in generate
+    for chunk in self.raw.stream(chunk_size, decode_content=True):
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/urllib3/response.py", line 576, in stream
+    data = self.read(amt=amt, decode_content=decode_content)
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/urllib3/response.py", line 548, in read
+    data = self._decode(data, decode_content, flush_decoder)
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/urllib3/response.py", line 404, in _decode
+    raise DecodeError(
+urllib3.exceptions.DecodeError: ('Received response with content-encoding: gzip, but failed to decode it.', error('Error -3 while decompressing data: incorrect header check'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/django_crontab/crontab.py", line 145, in run_job
+    func(*job_args, **job_kwargs)
+  File "/home/levinson/Projects/zerodha/zerodha/cron.py", line 7, in scrape_bse
+    res = requests.get(url, headers=headers)
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/requests/sessions.py", line 697, in send
+    r.content
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/requests/models.py", line 831, in content
+    self._content = b''.join(self.iter_content(CONTENT_CHUNK_SIZE)) or b''
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/requests/models.py", line 758, in generate
+    raise ContentDecodingError(e)
+requests.exceptions.ContentDecodingError: ('Received response with content-encoding: gzip, but failed to decode it.', error('Error -3 while decompressing data: incorrect header check'))
+Failed to complete cronjob at ('* * * * *', 'zerodha.cron.scrape_bse', '>> /home/levinson/Projects/zerodha/zerodha/logs.txt 2>&1')
+Traceback (most recent call last):
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/urllib3/response.py", line 401, in _decode
+    data = self._decoder.decompress(data)
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/urllib3/response.py", line 88, in decompress
+    ret += self._obj.decompress(data)
+zlib.error: Error -3 while decompressing data: incorrect header check
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/requests/models.py", line 753, in generate
+    for chunk in self.raw.stream(chunk_size, decode_content=True):
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/urllib3/response.py", line 576, in stream
+    data = self.read(amt=amt, decode_content=decode_content)
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/urllib3/response.py", line 548, in read
+    data = self._decode(data, decode_content, flush_decoder)
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/urllib3/response.py", line 404, in _decode
+    raise DecodeError(
+urllib3.exceptions.DecodeError: ('Received response with content-encoding: gzip, but failed to decode it.', error('Error -3 while decompressing data: incorrect header check'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/django_crontab/crontab.py", line 145, in run_job
+    func(*job_args, **job_kwargs)
+  File "/home/levinson/Projects/zerodha/zerodha/cron.py", line 7, in scrape_bse
+    res = requests.get(url, headers=headers)
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/requests/sessions.py", line 697, in send
+    r.content
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/requests/models.py", line 831, in content
+    self._content = b''.join(self.iter_content(CONTENT_CHUNK_SIZE)) or b''
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/requests/models.py", line 758, in generate
+    raise ContentDecodingError(e)
+requests.exceptions.ContentDecodingError: ('Received response with content-encoding: gzip, but failed to decode it.', error('Error -3 while decompressing data: incorrect header check'))
+Failed to complete cronjob at ('* * * * *', 'zerodha.cron.scrape_bse', '>> /home/levinson/Projects/zerodha/zerodha/logs.txt 2>&1')
+Traceback (most recent call last):
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/urllib3/response.py", line 401, in _decode
+    data = self._decoder.decompress(data)
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/urllib3/response.py", line 88, in decompress
+    ret += self._obj.decompress(data)
+zlib.error: Error -3 while decompressing data: incorrect header check
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/requests/models.py", line 753, in generate
+    for chunk in self.raw.stream(chunk_size, decode_content=True):
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/urllib3/response.py", line 576, in stream
+    data = self.read(amt=amt, decode_content=decode_content)
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/urllib3/response.py", line 548, in read
+    data = self._decode(data, decode_content, flush_decoder)
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/urllib3/response.py", line 404, in _decode
+    raise DecodeError(
+urllib3.exceptions.DecodeError: ('Received response with content-encoding: gzip, but failed to decode it.', error('Error -3 while decompressing data: incorrect header check'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/django_crontab/crontab.py", line 145, in run_job
+    func(*job_args, **job_kwargs)
+  File "/home/levinson/Projects/zerodha/zerodha/cron.py", line 7, in scrape_bse
+    res = requests.get(url, headers=headers)
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/requests/sessions.py", line 697, in send
+    r.content
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/requests/models.py", line 831, in content
+    self._content = b''.join(self.iter_content(CONTENT_CHUNK_SIZE)) or b''
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/requests/models.py", line 758, in generate
+    raise ContentDecodingError(e)
+requests.exceptions.ContentDecodingError: ('Received response with content-encoding: gzip, but failed to decode it.', error('Error -3 while decompressing data: incorrect header check'))
+Failed to complete cronjob at ('* * * * *', 'zerodha.cron.scrape_bse', '>> /home/levinson/Projects/zerodha/zerodha/logs.txt 2>&1')
+Traceback (most recent call last):
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/urllib3/response.py", line 401, in _decode
+    data = self._decoder.decompress(data)
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/urllib3/response.py", line 88, in decompress
+    ret += self._obj.decompress(data)
+zlib.error: Error -3 while decompressing data: incorrect header check
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/requests/models.py", line 753, in generate
+    for chunk in self.raw.stream(chunk_size, decode_content=True):
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/urllib3/response.py", line 576, in stream
+    data = self.read(amt=amt, decode_content=decode_content)
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/urllib3/response.py", line 548, in read
+    data = self._decode(data, decode_content, flush_decoder)
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/urllib3/response.py", line 404, in _decode
+    raise DecodeError(
+urllib3.exceptions.DecodeError: ('Received response with content-encoding: gzip, but failed to decode it.', error('Error -3 while decompressing data: incorrect header check'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/django_crontab/crontab.py", line 145, in run_job
+    func(*job_args, **job_kwargs)
+  File "/home/levinson/Projects/zerodha/zerodha/cron.py", line 7, in scrape_bse
+    res = requests.get(url, headers=headers)
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/requests/sessions.py", line 697, in send
+    r.content
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/requests/models.py", line 831, in content
+    self._content = b''.join(self.iter_content(CONTENT_CHUNK_SIZE)) or b''
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/requests/models.py", line 758, in generate
+    raise ContentDecodingError(e)
+requests.exceptions.ContentDecodingError: ('Received response with content-encoding: gzip, but failed to decode it.', error('Error -3 while decompressing data: incorrect header check'))
+Failed to complete cronjob at ('* * * * *', 'zerodha.cron.scrape_bse', '>> /home/levinson/Projects/zerodha/zerodha/logs.txt 2>&1')
+Traceback (most recent call last):
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/urllib3/response.py", line 401, in _decode
+    data = self._decoder.decompress(data)
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/urllib3/response.py", line 88, in decompress
+    ret += self._obj.decompress(data)
+zlib.error: Error -3 while decompressing data: incorrect header check
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/requests/models.py", line 753, in generate
+    for chunk in self.raw.stream(chunk_size, decode_content=True):
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/urllib3/response.py", line 576, in stream
+    data = self.read(amt=amt, decode_content=decode_content)
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/urllib3/response.py", line 548, in read
+    data = self._decode(data, decode_content, flush_decoder)
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/urllib3/response.py", line 404, in _decode
+    raise DecodeError(
+urllib3.exceptions.DecodeError: ('Received response with content-encoding: gzip, but failed to decode it.', error('Error -3 while decompressing data: incorrect header check'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/django_crontab/crontab.py", line 145, in run_job
+    func(*job_args, **job_kwargs)
+  File "/home/levinson/Projects/zerodha/zerodha/cron.py", line 7, in scrape_bse
+    res = requests.get(url, headers=headers)
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/requests/sessions.py", line 697, in send
+    r.content
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/requests/models.py", line 831, in content
+    self._content = b''.join(self.iter_content(CONTENT_CHUNK_SIZE)) or b''
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/requests/models.py", line 758, in generate
+    raise ContentDecodingError(e)
+requests.exceptions.ContentDecodingError: ('Received response with content-encoding: gzip, but failed to decode it.', error('Error -3 while decompressing data: incorrect header check'))
+Failed to complete cronjob at ('* * * * *', 'zerodha.cron.scrape_bse', '>> /home/levinson/Projects/zerodha/zerodha/logs.txt 2>&1')
+Traceback (most recent call last):
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/urllib3/response.py", line 401, in _decode
+    data = self._decoder.decompress(data)
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/urllib3/response.py", line 88, in decompress
+    ret += self._obj.decompress(data)
+zlib.error: Error -3 while decompressing data: incorrect header check
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/requests/models.py", line 753, in generate
+    for chunk in self.raw.stream(chunk_size, decode_content=True):
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/urllib3/response.py", line 576, in stream
+    data = self.read(amt=amt, decode_content=decode_content)
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/urllib3/response.py", line 548, in read
+    data = self._decode(data, decode_content, flush_decoder)
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/urllib3/response.py", line 404, in _decode
+    raise DecodeError(
+urllib3.exceptions.DecodeError: ('Received response with content-encoding: gzip, but failed to decode it.', error('Error -3 while decompressing data: incorrect header check'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/django_crontab/crontab.py", line 145, in run_job
+    func(*job_args, **job_kwargs)
+  File "/home/levinson/Projects/zerodha/zerodha/cron.py", line 7, in scrape_bse
+    res = requests.get(url, headers=headers)
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/requests/sessions.py", line 697, in send
+    r.content
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/requests/models.py", line 831, in content
+    self._content = b''.join(self.iter_content(CONTENT_CHUNK_SIZE)) or b''
+  File "/home/levinson/Projects/zerodha/venv/lib/python3.8/site-packages/requests/models.py", line 758, in generate
+    raise ContentDecodingError(e)
+requests.exceptions.ContentDecodingError: ('Received response with content-encoding: gzip, but failed to decode it.', error('Error -3 while decompressing data: incorrect header check'))
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>403 - Forbidden</title>
+	</head>
+	<body>
+		<h1>403 - Forbidden</h1>
+	</body>
+</html>
+
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>403 - Forbidden</title>
+	</head>
+	<body>
+		<h1>403 - Forbidden</h1>
+	</body>
+</html>
+
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>403 - Forbidden</title>
+	</head>
+	<body>
+		<h1>403 - Forbidden</h1>
+	</body>
+</html>
+
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>403 - Forbidden</title>
+	</head>
+	<body>
+		<h1>403 - Forbidden</h1>
+	</body>
+</html>
+
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>403 - Forbidden</title>
+	</head>
+	<body>
+		<h1>403 - Forbidden</h1>
+	</body>
+</html>
+
